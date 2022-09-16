@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+
+{% block page_title %}
+    {{ product.title }}
+{% endblock %}
+
+{% block body_content %}
+    {{ product.title }}<br>
+    {{ product.price }}<br>
+    {{ product.availability }}<br>
+    {{ product.description }}
+{% endblock %}

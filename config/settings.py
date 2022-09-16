@@ -51,8 +51,9 @@ INSTALLED_APPS = [
     'allauth.account',
 
     # local apps
-    'accounts',
-    'pages',
+    'accounts.apps.AccountsConfig',
+    'products.apps.ProductsConfig',
+    'pages.apps.PagesConfig',
 ]
 # allauth settings
 AUTHENTICATION_BACKENDS = [
