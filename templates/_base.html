@@ -38,11 +38,11 @@
         {% if user.is_authenticated %}
             Welcome, {{ user }}
             |
-            <a class="navbar-brand  mx-2  text-white" href="{% url "logout" %}">Logout</a>
+            <a class="navbar-brand  mx-2  text-white" href="{% url "account_logout" %}">Logout</a>
         {% else %}
-            <a class="navbar-brand  mx-2  text-white" href="{% url "login" %}">Login</a>
+            <a class="navbar-brand  mx-2  text-white" href="{% url "account_login" %}">Login</a>
             |
-            <a class="navbar-brand  mx-2  text-white" href="{% url "signup" %}">Signup</a>
+            <a class="navbar-brand  mx-2  text-white" href="{% url "account_signup" %}">Signup</a>
         {% endif %}
     </div>
 </nav>
