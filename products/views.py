@@ -4,7 +4,7 @@ from .models import Product
 
 
 class ProductsListView(generic.ListView):
-    model = Product
+    queryset = Product.objects.filter(availability=True)
     context_object_name = 'products'
     template_name = 'products/products_list.html'
 
