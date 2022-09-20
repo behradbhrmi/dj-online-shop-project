@@ -3,6 +3,11 @@ from django.shortcuts import reverse
 from django.contrib.auth import get_user_model
 
 
+class DemonstrableCommentsManager(models.Manager):
+    def get_queryset(self):
+        return super(DemonstrableCommentsManager, self).get_queryset().filter(demonstrable=True)
+
+
 class Product(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
@@ -34,6 +39,10 @@ class Comment(models.Model):
     demonstrable = models.BooleanField(default=True)
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
+
+    # Manager
+    objects = models.Manager()
+    demonstrable_comments_manager = DemonstrableCommentsManager()
 
     def __str__(self):
         return self.text
