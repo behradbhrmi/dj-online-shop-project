@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 13:56+0430\n"
+"POT-Creation-Date: 2022-09-20 14:00+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,9 +42,18 @@ msgstr "عالی"
 msgid "Comment text"
 msgstr "متن دیدگاه"
 
+#: .\templates\products\product_detail.html:28
+#: .\templates\products\product_detail.html:30
+msgid "$"
+msgstr "تومان"
+
 #: .\templates\products\product_detail.html:41
 msgid "Add to Cart"
 msgstr "افزودن به سبد خرید"
+
+#: .\templates\products\product_detail.html:45
+msgid "Categories"
+msgstr "دسته بندی"
 
 #: .\templates\products\product_detail.html:61
 msgid "Product description"

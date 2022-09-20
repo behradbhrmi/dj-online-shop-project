@@ -25,9 +25,9 @@
                                 {{ product.description | truncatechars:30 }}
                             </p>
                             <div class="my-5 py-5 product-price-wrapper mb--25">
-                                <span class="money text-success">{{ product.price }} تومان</span>
+                                <span class="money text-success">{{ product.price }} {% translate '$' %}</span>
                                 <span class="price-separator">-</span>
-                                <span class="money old-price text-danger">۲۱۰,۰۰۰ تومان</span>
+                                <span class="money old-price text-danger">۲۱۰,۰۰۰ {% trans '$' %}</span>
                             </div>
                             <div class="product-action d-flex align-items-sm-center align-content-center mb--30">
                                 <div class="quantity-wrapper d-flex justify-content-start">
@@ -42,7 +42,7 @@
                                 </button>
                             </div>
                             <div class="product-footer-meta mt-5 pt-5">
-                                <p><span class="m-0">دسته بندی ها:</span>
+                                <p><span class="m-0">{% trans 'Categories' %}:</span>
                                     <a href="shop.html">لباس</a>,
                                     <a href="shop.html">تابستانی</a>,
                                     <a href="shop.html">گرم</a>,
