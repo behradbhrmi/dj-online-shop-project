@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 13:22+0430\n"
+"POT-Creation-Date: 2022-09-20 13:56+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,30 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\models.py:30
+msgid "Very Bad"
+msgstr "خیلی بد"
+
+#: .\models.py:31
+msgid "Bad"
+msgstr "بد"
+
+#: .\models.py:32
+msgid "Normal"
+msgstr "معمولی"
+
+#: .\models.py:33
+msgid "Good"
+msgstr "خوب"
+
+#: .\models.py:34
+msgid "Perfect"
+msgstr "عالی"
+
+#: .\models.py:38
+msgid "Comment text"
+msgstr "متن دیدگاه"
 
 #: .\templates\products\product_detail.html:41
 msgid "Add to Cart"
