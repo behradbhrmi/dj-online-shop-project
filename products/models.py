@@ -36,7 +36,7 @@ class Comment(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='comments')
     user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, related_name='comments')
     text = models.TextField(verbose_name=_('Comment text'))
-    satisfaction = models.CharField(max_length=8, choices=STARS)
+    satisfaction = models.CharField(max_length=8, choices=STARS, verbose_name=_('Satisfaction'))
     demonstrable = models.BooleanField(default=True)
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
